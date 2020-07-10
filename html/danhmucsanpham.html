@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Danh mục sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../html/css/danhmucsanpham.css">
+    <link rel="stylesheet" href="css/Đăng nhập.css">
+    <link rel="stylesheet" href="css/Đăng ký.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	
+	<div class="header">
+        <a href="index.html"><img src="../img/header/logo.png"></a>
+        <input type="text" name="search" size="35" required placeholder="Nhập từ khóa tìm kiếm">
+        <div class="kinh_lup">
+            <img src="../img/header/kinhlup.png">
+        </div>
+        <div class="dang_nhap">
+                <div>
+                    <img src="../img/header/login.png">
+                    <p>
+                        <buton type="button" onclick="document.getElementById('Login').style.display='block'" >Đăng nhập</buton>
+                        <buton onclick="document.getElementById('dangky').style.display='block'" style="width:auto;">Đăng ký</buton>
+
+                    <div id="Login" class="modal">
+
+                          <form class="modal-content" action="#" method="post">
+
+                            <div class="imglogo"> 
+                                <span onclick="document.getElementById('Login').style.display='none'" class="close" title="Đóng">&times;</span> 
+                                <img src="file:///C|/Users/HP/Desktop/Chitietsp/Project _ Cuối Kỳ/img/header/logo.png" alt="LogoCty" class="logo"> 
+                            </div>
+
+                            <div class="container">
+
+                              <label for="uname"><b>Email / SĐT</b></label>
+                              <input type="text" id="uname" placeholder="Nhập Email hoặc Số điện thoại" name="uname" autocomplete="on" required>
+                              <label for="psw"><strong>Mật khẩu</strong></label>
+                              <input type="password" id="psw" placeholder="Nhập mật khẩu từ 8 đến 32 ký tự" name="psw" autocomplete="on" pattern="[a-z0-9]{8,32}" required>
+
+                                <div style="background-color:#f1f1f1; color: #359FF4;"> 
+                                    <span class="psw"><a href="#" style="text-decoration: none;">Quên mật khẩu?</a></span> 
+                                </div>
+
+                              <button type="submit"><b>ĐĂNG NHẬP</b></button>
+
+                              <button class="mxh gg">
+                                  <a href="#" class="fa fa-google"></a> 
+                                  Đăng nhập bằng Google
+                              </button>
+
+                              <button type="button" class="mxh fb">
+                                  <a href="#" class="fa fa-facebook"></a> 
+                                  Đăng nhập bằng Facebook
+                              </button>
+                            </div>
+
+                          </form>
+                    </div> 
+                       
+
+                    <div id="dangky" class="modal">
+
+                        <form action="#" method="post" class="modal-content">
+
+                            <div class="imglogo"> 
+                                <span onclick="document.getElementById('dangky').style.display='none'" class="close" title="Đóng">&times;</span>
+                                <img src="file:///C|/Users/HP/Desktop/Chitietsp/Project _ Cuối Kỳ/img/header/logo.png" alt="LogoCty" class="logo"> 
+                            </div>
+
+                            <div class="container">
+                                <label for="name"><b>Họ và tên</b></label>
+                                <input type="text" id="name" placeholder="Nhập Họ và tên" name="name" required>
+
+                                <label for="unamedk"><b>Email / SĐT</b></label>
+                                <input type="text" id="unamedk" placeholder="Nhập Email hoặc Số điện thoại" name="unamedk" required>
+
+                                <label for="pswdk"><b>Mật khẩu</b></label>
+                                <input type="password" id="pswdk" placeholder="Nhập mật khẩu từ 8 đến 32 ký tự" name="psw" required>
+
+                                <label for="rpsw"><b>Nhập lại mật khẩu</b></label>
+                                <input type="password" id="rpsw" placeholder="Nhập lại mật khẩu" name="psw" required>
+
+                                <button type="submit">
+                                    <b>ĐĂNG KÝ</b>
+                                </button>
+
+                                <button class="mxh gg">
+                                      <span><a href="#" class="fa fa-google"></a></span>  
+                                      Đăng nhập bằng Google
+                                </button>
+
+                                <button class="mxh fb">
+                                      <span><a href="#" class="fa fa-facebook"></a></span>  
+                                      Đăng nhập bằng Facebook
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        <div class="gio_hang"><a href="../html/giohang.html">
+            <img src="../img/header/giohang.jpg">
+            <p>Giỏ hàng</p></a>
+        </div>
+</div>
+<!-- het header -->
+<div  class="menu_tab" >
+    <ul class="menu">
+        <li><a href="../html/" target="blank">Thông Báo</a></li>
+        <li><a href="../html/" target="blank">Liên Hệ</a></li>
+        <li><a href="https://zingnews.vn/cong-nghe.html" target="blank">Tin Công Nghệ</a></li>
+        <li><a href="../html/" target="blank">Giới Thiệu</a></li>
+    </ul>
+</div>
+<!-- dong ke ngang  -->
+<hr class="duoi_menum">
+<!-- content  -->
+    <!-- cac laoi san pham ASUS  -->
+    <div class="lap_top_asus">
+        <h4 id="asus">Laptop ASUS</h4>
+        <ul>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/asus/1/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop ASUS VivoBook X407MA-BV169T<br>
+                    <strike>8.290.000đ</strike></p>
+                    <span>7.290.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/asus/2/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop ASUS 15 X509JA-EJ021T<br>
+                    <strike>14.690.000đ</strike></p>
+                    <span>14.090.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/asus/5/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop ASUS ZenBook Duo UX481FL-BM048T <br>
+                    <strike>30.990.000đ</strike></p>
+                    <span>27.490.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/asus/3/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop ASUS VivoBook S15 S531FA-BQ104T<br>
+                    <strike>18.190.000đ</strike></p>
+                    <span>17.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/asus/4/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop ASUS VivoBook X407MA-BV169T<br>
+                    <strike>30.990.000đ</strike></p>
+                    <span>27.490.000đ</span>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+    <!-- cac laoi san pham Macbook  -->
+    <div class="lap_top_mac">
+        <h4>Laptop Macbook</h4>
+        <ul>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/macbook/Laptop Apple MacBook Air 13 2019 MVFM2SAA/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Apple MacBook Air 13 2019 MVFM2SAA<br>
+                    <strike>32.990.000đ</strike></p>
+                    <span>31.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/macbook/Laptop Apple MacBook Air 2018 13 MREA2/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Apple MacBook Air 2018 13 MREA2<br>
+                    <strike>33.290.000đ</strike></p>
+                    <span>31.900.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/macbook/Laptop Apple MacBook Pro 16 2019 (MVVL2SAA)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Apple MacBook Pro 16 2019 (MVVL2SAA)<br>
+                    <strike>61.290.000đ</strike></p>
+                    <span>59.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/macbook/Laptop Apple MacBook Pro 2018 13.3 MR9R2/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Apple MacBook Pro 2018 13.3 MR9R2<br>
+                    <strike>51.290.000đ</strike></p>
+                    <span>49.890.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/macbook/Laptop Apple MacBook Pro 2019 13 MUHN2SAA/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Apple MacBook Pro 2019 13 MUHN2SAA<br>
+                    <strike>36.290.000đ</strike></p>
+                    <span>34.490.000đ </span>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+    <!-- cac laoi san pham Hp  -->
+     <div class="lap_top_hp">
+        <h4>Laptop Hp</h4>
+        <ul>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/hp/Laptop HP 14s-dk0097AU 7VH92PA/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop HP 14s-dk0097AU 7VH92PA <br>
+                    <strike>9.290.000đ</strike></p>
+                    <span>8.490.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/hp/Laptop HP ENVY 13-aq1021TU (8QN79PA)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop HP ENVY 13-aq1021TU (8QN79PA)<br>
+                    <strike>22.290.000đ</strike></p>
+                    <span>21.690.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/hp/Laptop HP OMEN 15-dh0169tx (8ZR37PA)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop HP OMEN 15-dh0169tx (8ZR37PA)<br>
+                    <strike>79.290.000đ</strike></p>
+                    <span>76.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/hp/Laptop HP Pavilion 15-cs3010TU (8QN78PA) - i3/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop HP Pavilion 15-cs3010TU (8QN78PA)<br>
+                    <strike>13.290.000đ</strike></p>
+                    <span>12.890.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/hp/Laptop HP Pavilion 15-cs3015TU - i5/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop HP Pavilion 15-cs3015TUT<br>
+                    <strike>16.290.000đ</strike></p>
+                    <span>15.090.000đ
+
+</span>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+    <!-- cac laoi san pham Dell  -->
+     <div class="lap_top_dell" id="dell">
+        <h4>Laptop Dell</h4>
+        <ul>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/dell/Laptop Dell G3 15 3590-N5I5518W/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Dell G3 15 3590-N5I5518W<br>
+                    <strike>25.290.000đ</strike></p>
+                    <span>23.690.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/dell/Laptop Dell Inspiron 13 7391 7391-N3TI5008W/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Dell Inspiron 13 7391 7391-N3TI5008W<br>
+                    <strike>26.290.000đ</strike></p>
+                    <span>24.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/dell/Laptop Dell Inspiron 14 3493-N3493A/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Dell Inspiron 14 3493-N3493A<br>
+                    <strike>15.290.000đ</strike></p>
+                    <span>14.390.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/dell/Laptop Dell Inspiron 14 5491-N4TI5024W/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Dell Inspiron 14 5491-N4TI5024W<br>
+                    <strike>26.290.000đ</strike></p>
+                    <span>24.490.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/dell/Laptop Dell Vostro 15 5590-HYXT91/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Dell Vostro 15 5590-HYXT91<br>
+                    <strike>20.990.000đ</strike></p>
+                    <span>19.990.000đ</span>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+     <!-- cac laoi san pham Acer  -->
+    <div class="lap_top_acer">
+        <h4>Laptop Acer </h4>
+        <ul>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/acer/Laptop Acer Aspire 3 A315-42-R4XD (NX.HF9SV.008)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Acer Aspire 3 A315-42-R4XD (NX.HF9SV.008)<br>
+                    <strike>15.290.000đ</strike></p>
+                    <span>13.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/acer/Laptop Acer Nitro 5 AN515-54-51X1 (NH.Q5ASV.011)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Acer Nitro 5 AN515-54-51X1 (NH.Q5ASV.011)<br>
+                    <strike>20.290.000đ</strike></p>
+                    <span>18.890.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/acer/Laptop Acer Swift 3 SF314-41-R4J1 (NX.HFDSV.001)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Acer Swift 3 SF314-41-R4J1 (NX.HFDSV.001)<br>
+                    <strike>13.290.000đ</strike></p>
+                    <span>12.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/acer/Laptop Acer Swift 3 SF314-57-52GB (NX.HJFSV.001)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Acer Swift 3 SF314-57-52GB (NX.HJFSV.001)<br>
+                    <strike>19.290.000đ</strike></p>
+                    <span>18.990.000đ</span>
+                </div></a>
+            </li>
+            <li><a href="Laptop ASUS VivoBook X407MA-BV169T.html" target="blank"><img src="../img/acer/Laptop Acer Swift 3 SF314-58-55RJ (NX.HPMSV.006)/1.jpg">
+                <div class="lap_hinh_anh">
+                    <p>Laptop Acer Swift 3 SF314-58-55RJ (NX.HPMSV.006)<br>
+                    <strike>17 .290.000đ</strike></p>
+                    <span>16.990.000đ</span>
+                </div></a>
+            </li>
+        </ul>
+    </div>
+    <!-- footer  -->
+    <div class="footer">
+        <ul>
+            <li><a href="facebook" target="blank"><img src="../img/nut/face.jpg"></a></li>
+            <li><a href="instagram" target="blank"><img src="../img/nut/insta.jpeg"></a></li>
+            <li><a href="twitter" target="blank"><img src="../img/nut/twitter.jpg"></a></li>
+        </ul>
+        <div class="e_mail">
+            <img src="../img/nut/email.png">
+            <p>Bạn muốn là người sớm nhất nhận khuyến mãi đặc biệt?<br>
+                Đăng ký ngay.
+            </p>
+        </div>
+        <input type="text" name="search" required placeholder="Thả Email Nhận Ưu Đãi"> 
+        <button></button>
+    </div>
+    <!-- phu luc  -->
+    <div class="phu_luc">
+        <ul>
+            <li>
+                <h6>Thông tin công ty</h6>
+                <a href="aimabiet.html">Giới thiệu công ty</a><br>
+                <a href="aimabiet.html">Hệ thống cửa hàng</a><br>
+                <a href="aimabiet.html">Mua hàng doanh nghiệp</a><br>
+                <a href="aimabiet.html">Tuyển dụng</a><br>
+                <a href="aimabiet.html">Liên hệ</a>
+            </li>
+            <li>
+                <h6>Chính sách</h6>
+                <a href="aimabiet.html">Giao nhận - Lắp đặt</a><br>
+                <a href="aimabiet.html">Dùng thử sản phẩm</a><br>
+                <a href="aimabiet.html">Đổi trả sản phẩm</a><br>
+                <a href="aimabiet.html">Bảo hành</a><br>
+                <a href="aimabiet.html">Trả góp</a><br>
+            </li>
+            <li>
+                <h6>Hỗ trợ khách hàng</h6>
+                <a href="aimabiet.html">Hướng dẫn mua hàng</a><br>
+                <a href="aimabiet.html">Dịch vụ vệ sinh máy lạnh</a><br>
+                <a href="aimabiet.html">Tra cứu bảo hành</a><br>
+                <a href="aimabiet.html">Hóa đơn điện tử</a><br>
+                <a href="aimabiet.html">Câu hỏi thường gặp</a>
+            </li>
+            <li>
+                <h6>Thông tin khác</h6>
+                <a href="aimabiet.html">Email: tnt@gmail..com</a><br>
+                <a href="aimabiet.html">Mua hàng - Góp ý - Bảo hành</a><br>
+                <a href="aimabiet.html">Gọi: 0868736909 (mien phi)</a><br>
+                <a href="aimabiet.html">Sơ đồ trang web</a><br>
+                <a href="aimabiet.html">Cảnh báo giả mạo</a>
+            </li>
+        </ul>
+        <p>Shop TNT<br>
+            <i>© 2020 Shop TNT</i>
+        </p>
+    </div>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/popper.min.js"></script>
+    <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        var modal = document.getElementById('Login', 'dangky');
+ 
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
